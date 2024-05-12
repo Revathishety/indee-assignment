@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form id="loginForm" class="login-form">
+      <h2>Login</h2>
+      <div class="form-group">
+        <label for="username">Username or Email:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username or email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="rememberMe" name="rememberMe">
+        <label for="rememberMe">Remember Me</label>
+      </div>
+      <button type="submit" class="login-button">Login</button>
+      <p class="forgot-password"><a href="#" id="forgotPassword">Forgot Password?</a></p>
+    </form>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get the login form
+      const loginForm = document.getElementById('loginForm');
+
+      // Add event listener for form submission
+      loginForm.addEventListener('submit', function(event) {
+        // Prevent default form submission
+        event.preventDefault();
+
+        // Get the username and password values
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // You can add your authentication logic here
+        // For this example, just display an alert with the entered values
+        alert(`Username/Email: ${username}\nPassword: ${password}`);
+      });
+    });
+  </script>
+</body>
+</html>
