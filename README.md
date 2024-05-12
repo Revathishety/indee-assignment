@@ -32,3 +32,10 @@
 This code demonstrates storing and displaying login data using localStorage in a web browser.
 
 Netlify link - https://indeeassignment.netlify.app/
+PHONE - ![WhatsApp Image 2024-05-13 at 02 19 29_0a145bdf](https://github.com/Revathishety/indee-assignment/assets/116489772/c3060520-da1f-4188-8e2e-8f86d5d7d039)
+Laptop Login page - ![Screenshot 2024-05-13 021739](https://github.com/Revathishety/indee-assignment/assets/116489772/611568f4-398d-4bae-82a2-071e31bc6e34)
+Password stored page - ![Screenshot 2024-05-13 021633](https://github.com/Revathishety/indee-assignment/assets/116489772/fdf758c4-008a-44c7-980a-a413ad0fdc28)
+
+
+
+
