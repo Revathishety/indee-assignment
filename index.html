@@ -27,8 +27,6 @@
     </form>
   </div>
 
-  <div id="loginDataDisplay"></div> <!-- Container to display login data -->
-
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       // Get the login form
@@ -43,36 +41,10 @@
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
 
-        // Save data to localStorage
-        const userData = { username, password };
-        localStorage.setItem('userData', JSON.stringify(userData));
-
-        // Display stored login data
-        displayLoginData();
+        // You can add your authentication logic here
+        // For this example, just display an alert with the entered values
+        alert(`Username/Email: ${username}\nPassword: ${password}`);
       });
-
-      // Function to display stored login data
-      function displayLoginData() {
-        // Get login data from localStorage
-        const storedData = localStorage.getItem('userData');
-
-        // Check if data exists
-        if (storedData) {
-          // Parse JSON string to object
-          const userData = JSON.parse(storedData);
-
-          // Display data on the web page
-          const displayContainer = document.getElementById('loginDataDisplay');
-          displayContainer.innerHTML = `
-            <h2>Stored Login Data:</h2>
-            <p>Username or Email: ${userData.username}</p>
-            <p>Password: ${userData.password}</p>
-          `;
-        }
-      }
-
-      // Display stored login data on page load
-      displayLoginData();
     });
   </script>
 </body>
